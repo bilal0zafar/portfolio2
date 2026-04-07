@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilal Ahmed Portfolio</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0d0d0d;
+  color:#fff;
+}
+
+/* CONTAINER */
+.container{
+  width:1100px;
+  margin:auto;
+  padding:40px;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.name{
+  font-size:40px;
+  font-weight:bold;
+}
+
+.subtitle{
+  color:#bbb;
+  margin-bottom:10px;
+}
+
+.profile img{
+  width:200px;
+  border-radius:20px;
+  border:3px solid red;
+}
+
+/* SECTIONS */
+.section{
+  margin-top:50px;
+}
+
+.card{
+  background:#111;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 0 15px rgba(255,0,0,0.2);
+}
+
+/* SKILLS */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+
+.skill{
+  background:#1a1a1a;
+  padding:15px;
+  text-align:center;
+  border-radius:10px;
+}
+
+/* TIMELINE */
+.timeline{
+  border-left:3px solid red;
+  padding-left:20px;
+}
+
+.timeline div{
+  margin-bottom:20px;
+}
+
+/* PORTFOLIO GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card img:hover{
+  transform:scale(1.05);
+}
+
+/* BADGES */
+.badge{
+  display:inline-block;
+  padding:6px 12px;
+  margin:5px;
+  border-radius:20px;
+  background:#222;
+}
+
+.active{
+  background:red;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .container{
+    width:100%;
+  }
+
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .header{
+    flex-direction:column;
+    gap:20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <div class="name">Bilal Ahmed</div>
+    <div class="subtitle">Poster • Thumbnail • Illustration Designer</div>
+
+    <p>Email: billubut68@gmail.com</p>
+    <p>Phone: +92 335 3448938</p>
+    <p>Pakistan</p>
+  </div>
+
+  <div class="profile">
+    <img src="bilal.jpg.jpg">
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Me</h2>
+  <div class="card">
+    Creative designer with 2.5+ years of experience creating eye-catching posters,
+    YouTube thumbnails and illustrations. Skilled in visual storytelling and strong composition.
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="section">
+  <h2>Experience</h2>
+  <div class="card timeline">
+    <div>
+      <h3>Freelance Graphic Designer</h3>
+      <p>2022 – Present</p>
+    </div>
+
+    <div>
+      <h3>Poster & Thumbnail Projects</h3>
+      <p>2023 – 2026</p>
+    </div>
+
+    <div>
+      <h3>Illustration Work</h3>
+      <p>2023 – 2025</p>
+    </div>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">Photoshop</div>
+    <div class="skill">Illustrator</div>
+    <div class="skill">Poster Design</div>
+    <div class="skill">Thumbnail Design</div>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div class="section">
+  <h2>Portfolio</h2>
+
+  <div>
+    <span class="badge active">Posters</span>
+    <span class="badge">Thumbnails</span>
+    <span class="badge">Illustrations</span>
+  </div>
+
+  <!-- POSTERS -->
+  <div class="section">
+    <h3>Posters</h3>
+    <div class="grid">
+      <div class="card"><img src="bike poster.jpg"></div>
+      <div class="card"><img src="BURGER POSTER.jpg"></div>
+      <div class="card"><img src="DEAD POOL.jpg"></div>
+      <div class="card"><img src="headphone.png"></div>
+      <div class="card"><img src="keyboard.jpg"></div>
+      <div class="card"><img src="MOVIE POSTER 3.jpg"></div>
+      <div class="card"><img src="MOVIE POSTER.jpg"></div>
+    </div>
+  </div>
+
+  <!-- THUMBNAILS -->
+  <div class="section">
+    <h3>Thumbnails</h3>
+    <div class="grid">
+      <div class="card"><img src="PUTIN THUMBNIL.jpg"></div>
+      <div class="card"><img src="thumbnil1.jpg"></div>
+      <div class="card"><img src="thumbnil2.jpg"></div>
+      <div class="card"><img src="thumbnil3.jpg"></div>
+    </div>
+  </div>
+
+  <!-- ILLUSTRATIONS -->
+  <div class="section">
+    <h3>Illustrations</h3>
+    <div class="grid">
+      <div class="card"><img src="boy.jpg"></div>
+      <div class="card"><img src="hero.jpg"></div>
+      <div class="card"><img src="1000176710.jpg"></div>
+      <div class="card"><img src="1000176709.jpg"></div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
